@@ -21,5 +21,6 @@ namespace ClinicFlow.Domain.Entities
         [ForeignKey(nameof(ClinicId))]
         public Clinic Clinic { get; set; }
         public ICollection<DoctorAvailability> DoctorAvailability { get; set; }
+        public ICollection<DoctorLeave> DoctorLeave { get; set; }
     }
 }
