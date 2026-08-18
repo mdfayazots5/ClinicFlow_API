@@ -11,6 +11,7 @@ namespace ClinicFlow.Domain.Entities
         public Int64 ClinicId { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
-        public string CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public ICollection<Doctor> Doctors { get; set; }
     }
 }
