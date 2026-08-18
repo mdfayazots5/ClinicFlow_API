@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace ClinicFlow.Domain.Enums
 {
-    internal class AppointmentStatus
+    public enum AppointmentStatus
     {
+        Scheduled,
+        Confirmed,
+        Completed,
+        Cancelled,
+        NoShow
+    }
+
+    public enum Role
+    {
+        Admin,
+        Doctor,
+        Receptionist,
+        Patient
     }
 }

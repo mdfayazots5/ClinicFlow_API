@@ -22,5 +22,7 @@ namespace ClinicFlow.Domain.Entities
         public Clinic Clinic { get; set; }
         public ICollection<DoctorAvailability> DoctorAvailability { get; set; }
         public ICollection<DoctorLeave> DoctorLeave { get; set; }
+        public ICollection<User> User { get; set; }
+        public ICollection<Appointment> Appointment { get; set; }
     }
 }
