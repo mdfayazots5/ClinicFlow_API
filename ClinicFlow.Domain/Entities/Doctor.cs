@@ -20,5 +20,6 @@ namespace ClinicFlow.Domain.Entities
         public bool IsActive { get; set; } = true;
         [ForeignKey(nameof(ClinicId))]
         public Clinic Clinic { get; set; }
+        public ICollection<DoctorAvailability> DoctorAvailability { get; set; }
     }
 }
